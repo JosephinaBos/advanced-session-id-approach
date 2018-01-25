@@ -27,7 +27,7 @@
                  <img id ="surfly_gif" style="display: none;" src="https://www.maplesoft.com/support/help/images/loading.gif">
             </div>
             <div class="surfly-modal-footer">
-                <button class="modal-button" id="btn-start-session" onclick="sessionStart()" aria-label="Close">Agree</button>
+                <button class="modal-button" id="btn-start-session" onclick="sessionStart(); displayGif();" aria-label="Close">Agree</button>
                 <button class="modal-button" id="btn-exit-modal" onclick="exitSession()" data-dismiss="modal" aria-label="Close">Cancel</button>
             </div>
         </div>
@@ -76,7 +76,6 @@
                     console.log(session);
                     var showId = document.getElementById("id-cover");
                     showId.textContent = session.pin;
-                    document.getElementById("btn-start-session").style.display = "none";
                 }).startLeader();
         }
 
@@ -100,6 +99,8 @@
         function displayGif(){
             document.getElementById("s_uitleg").style.display = "none";
             document.getElementById("surfly_gif").style.display = "block";
+            document.getElementById("btn-start-session").style.display = "none";
+        }
         }
 
         function exitSession(){
