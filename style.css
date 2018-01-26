@@ -71,7 +71,7 @@ h4 {
      padding-top: 60px;
 }
 
-/*.modal-button {
+.modal-button {
     background-color: #f43543;
     border: 1px solid #f43543;
     border-radius: 40px;
@@ -82,4 +82,4 @@ h4 {
     letter-spacing: 2px;
     font-family: sans-serif;
     margin: 24px;;
-}*/
+}
