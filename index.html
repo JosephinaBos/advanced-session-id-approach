@@ -78,10 +78,12 @@
                     var showId = document.getElementById("id-cover");
                     showId.textContent = session.pin;
                     document.getElementById("surfly_gif").style.display = "none";
-                    document.getElementById("btn-end-session").style.display = "block";
                     document.getElementById("btn-exit-modal").style.display = "none";
-                }).startLeader();
-        }
+                })
+                .on('session_loaded', function(session, event) {
+                    document.getElementById("btn-end-session").style.display = "block";
+                })
+            }.startLeader();
 
         if (!window.__surfly) {
 

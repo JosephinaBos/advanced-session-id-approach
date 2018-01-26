@@ -34,10 +34,6 @@
     cursor: pointer;
 }
 
-.basic-button p {
-    margin-top: -2px;
-}
-
 #btn-request-session {
     display: none;
 }
