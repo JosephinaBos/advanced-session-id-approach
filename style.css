@@ -22,7 +22,6 @@
     color: white;
     letter-spacing: 2px;
     font-family: sans-serif;
-    font-weight: bold;
     position: absolute;
     left: 15px;
     bottom: 15px;
@@ -72,7 +71,7 @@ h4 {
      padding-top: 60px;
 }
 
-.modal-button {
+/*.modal-button {
     background-color: #f43543;
     border: 1px solid #f43543;
     border-radius: 40px;
@@ -82,6 +81,5 @@ h4 {
     color: white;
     letter-spacing: 2px;
     font-family: sans-serif;
-    font-weight: bold;
     margin: 24px;;
-}
+}*/
