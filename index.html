@@ -8,10 +8,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <title>Advanced session ID approach</title>
+    <title>Customized session ID approach</title>
 </head>
 <body>
-    <h1 id="title">Advanced session ID approach</h1>
+    <h1 id="title">Customized session ID approach</h1>
     <div class="footer" id="footer">
        <button class="basic-button" id="btn-request-session" style="display: none;" onclick="this.style.display='none'" data-toggle="modal" data-target="#surfly-session-modal"><p>Get help</p></button>
     </div>
@@ -78,7 +78,7 @@
                     var showId = document.getElementById("id-cover");
                     showId.textContent = session.pin;
                     document.getElementById("surfly_gif").style.display = "none";
-                    // document.getElementById("btn-end-session").style.display = "block";
+                    document.getElementById("btn-end-session").style.display = "block";
                     // document.getElementById("btn-exit-modal").style.display = "none";
                 }).startLeader();
         }
@@ -104,7 +104,7 @@
             document.getElementById("s_uitleg").style.display = "none";
             document.getElementById("surfly_gif").style.display = "block";
             document.getElementById("btn-start-session").style.display = "none";
-            // document.getElementById("btn-end-session").style.display = "block";
+            document.getElementById("btn-end-session").style.display = "none";
         }
 
         function exitSession(){
