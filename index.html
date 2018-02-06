@@ -13,7 +13,7 @@
 <body>
     <h1 id="title">Customized session ID approach</h1>
     <div class="footer" id="footer">
-       <button class="basic-button" id="btn-request-session" style="display: none;" onclick="this.style.display='none'" data-toggle="modal" data-target="#surfly-session-modal"><p>Get help</p></button>
+       <button class="basic-button" id="btn-request-session" style="display: none;"  data-toggle="modal" data-target="#surfly-session-modal"><p>Get help</p></button>
     </div>
 
     <div id="surfly-session-modal" class="modal fade" role="dialog">
@@ -45,6 +45,9 @@
             widget_key: '0c17c102b943457a82838fe64a5a0a0d'}, function(init) {
             if (init.success) {
                 document.getElementById("btn-request-session").style.display = "block";
+                if (Surfly.currentSession) {
+                    document.getElementById("btn-request-session").style.display = "none";
+                }
             }
             //Make sure that once the session is ended, the correct session is removed from the active session list
             Surfly.on('session_ended', function(session) {
