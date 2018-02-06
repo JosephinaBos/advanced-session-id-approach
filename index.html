@@ -29,7 +29,7 @@
             <div class="surfly-modal-footer">
                 <button class="modal-button" id="btn-start-session" onclick="sessionStart(); displayGif();" aria-label="Close">Agree</button>
             <!--     <button class="modal-button" id="btn-exit-modal" onclick="document.getElementById('btn-request-session').style.display='block'" data-dismiss="modal" aria-label="Close">Cancel</button> -->
-                <button class="modal-button" id="btn-end-session" onclick="exitSession()" data-dismiss="modal" aria-label="Close">Cancel</button>
+                <button class="modal-button" id="btn-end-session" onclick="exitSession(); document.getElementById('btn-request-session').style.display='block'" data-dismiss="modal" aria-label="Close">Cancel</button>
             </div>
         </div>
     </div>
@@ -108,8 +108,8 @@
         }
 
         function exitSession(){
+            // document.getElementById("btn-request-session").style.display = "block";
             Surfly.listSessions()[0].end();
-            document.getElementById("btn-request-session").style.display = "block";
         }
     </script>
 </body>
