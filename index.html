@@ -82,7 +82,6 @@
                     showId.textContent = session.pin;
                     document.getElementById("surfly_gif").style.display = "none";
                     document.getElementById("btn-end-session").style.display = "block";
-                    document.getElementById("surfly-session-modal").style.display = "none";
                 }).startLeader();
         }
 
@@ -111,7 +110,7 @@
         }
 
         function exitSession(){
-            // document.getElementById("btn-request-session").style.display = "block";
+            document.getElementById("surfly-session-modal").style.display = "none";
             Surfly.listSessions()[0].end();
         }
     </script>
